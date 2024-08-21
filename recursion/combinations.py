@@ -3,8 +3,8 @@ class Solution:
         def func(start,res):
             if len(res)==k:
                 resl.append(res)
-            for o in range(start,n+1):
-                func(o+1,res+[o])
+            for i in range(start,n+1):
+                func(i+1,res+[i])
         resl=[]
         func(1,[])
         return resl
